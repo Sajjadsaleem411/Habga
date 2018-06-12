@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">hubgaClient</string>
+    <string name="confirmation_code">00-00-00 Confirmation code</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="offer_mount">Lorem ipsum dolor sit amet,consectetur adipiscing elit.Fusce quis dolor nec turpis tempus  ornare. Praesent ex metus, cursus vitae neque sed, bibendum sodales diam</string>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.karigar.hubgaclient.RstPasResendConfCodActivity">
+
+    <ImageView
+        android:id="@+id/Iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp"
+
+        android:src="@drawable/crossicon"/>
+
+    <RelativeLayout
+        android:id="@+id/Rl"
+        android:layout_width="275dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/Vtext1"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:background="#4F4965"
+            android:gravity="center"
+            android:text="Enter your Confirmation Code"
+            android:textSize="18sp"
+            android:fontFamily="@font/jfflatregular"/>
+
+        <TextView
+            android:id="@+id/Vtext2"
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/Vtext1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:text="* Please enter your confirmation code that was sent to yuo.
+ This not same as your password"
+            android:textColor="#4F4965"
+            android:fontFamily="@font/jfflatregular"/>
+
+        <EditText
+            android:id="@+id/eText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Vtext2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="11dp"
+            android:maxLength="18"
+            android:hint="_00_00_00_confirmation_code"
+            android:fontFamily="@font/jfflatregular"
+            android:textColorHint="#000000" />
+        <View
+            android:background="#4F4965"
+            android:layout_below="@+id/eText"
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/eText"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:background="#4F4965"
+            android:text="Submit"
+            android:fontFamily="@font/jfflatregular"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/Iv1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/btn"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/cdnmicon" />
+
+        <TextView
+            android:id="@+id/Vtext3"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@id/Iv1"
+            android:layout_below="@id/btn"
+            android:text="Code Does Not Match"
+            android:layout_marginLeft="10dp"
+            android:textColor="#D33B6F"
+            android:textSize="18sp"
+            android:fontFamily="@font/jfflatregular"/>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/Vtext3"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/resendcodebutton"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

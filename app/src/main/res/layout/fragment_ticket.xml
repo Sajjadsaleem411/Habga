@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpurple"
+    android:orientation="vertical"
+    tools:context=".TicketActivity">
+
+    <FrameLayout
+        android:id="@+id/F1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        >
+        <!--
+
+                <ImageView
+                    android:id="@+id/menue"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/menuiconwhite"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+        -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorEvent"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/jfflatregular"
+                android:text="Your Ticket"
+                android:textColor="#4f4965"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ticketiconbluewhite" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_weight="1.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#4f4965"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

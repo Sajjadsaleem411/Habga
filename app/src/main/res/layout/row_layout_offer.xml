@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Rl"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="09dp"
+    android:background="#44FFFFFF" >
+    <ImageView
+        android:id="@+id/Iv4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/mountaineeringicon"
+        android:background="#FD8450"/>
+    <TextView
+        android:id="@+id/Vtext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/Iv4"
+        android:text="Mountaineering"
+        android:fontFamily="@font/jfflatregular"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/Vtext2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Vtext1"
+        android:layout_toEndOf="@id/Iv4"
+        android:textSelectHandleLeft="@+id/Iv4"
+        android:layout_marginLeft="10dp"
+        android:textSize="10sp"
+        android:fontFamily="@font/jfflatregular"
+        android:text="Lorem ipsum dolor sit amet,consectetur
+adipiscing elit.Fusce quis dolor nec turpis tempus
+            ornare. Praesent ex metus, cursus vitae neque sed,
+            bibendum sodales diam"/>
+    <TextView
+        android:id="@id/Vtext3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/Vtext2"
+        android:text="Price"
+        android:fontFamily="@font/jfflatregular"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="00dp"/>
+
+</RelativeLayout>
+
+<!--
+<RelativeLayout android:id="@+id/Rl"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginBottom="09dp"
+    android:background="#44FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/Iv4"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="#FD8450"
+        android:src="@drawable/cruiseicon"/>
+    <TextView
+        android:id="@+id/Vtext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/Iv6"
+        android:text="Cruise"
+        android:fontFamily="@font/jfflatregular"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/Vtext2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Vtext1"
+        android:layout_toEndOf="@id/Iv6"
+        android:textSelectHandleLeft="@+id/Iv4"
+        android:textSize="13sp"
+        android:fontFamily="@font/jfflatregular"
+        android:layout_marginLeft="10dp"
+        android:text="@string/offer_mount"/>
+
+</RelativeLayout>-->

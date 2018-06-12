@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+     <FrameLayout
+         android:layout_weight="1"
+         android:id="@+id/frameLayout"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:background="@drawable/bg">
+
+      <!--   <ImageView
+             android:id="@+id/iIm"
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:layout_marginLeft="05dp"
+             android:layout_marginTop="05dp"
+             android:src="@drawable/sidebuttoniconb" />
+         <ImageView
+             android:id="@+id/Iv01"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="15dp"
+             android:layout_marginTop="05dp"
+             android:layout_weight="1"
+             android:layout_gravity="end"
+             android:src="@drawable/homeicon" />
+-->
+
+         <TextView
+             android:paddingTop="40dp"
+             android:id="@+id/tv_cruise_title"
+             android:layout_width="match_parent"
+             android:layout_height="80dp"
+             android:layout_gravity="bottom"
+             android:background="#FD8450"
+             android:text="Cruise"
+             android:gravity="center"
+             android:fontFamily="@font/jfflatregular"
+             android:textColor="#FFFFFF"
+             android:textSize="35sp" />
+
+         <ImageView
+             android:id="@+id/img_cruise_logo"
+             android:layout_width="140dp"
+             android:layout_height="140dp"
+             android:layout_gravity="center"
+             android:layout_marginBottom="00dp"
+             android:src="@drawable/cruiseicon" />
+
+     </FrameLayout>
+
+     <RelativeLayout
+         android:layout_weight="1.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+         android:layout_alignParentStart="true"
+         android:layout_below="@+id/frameLayout"
+         android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="05dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/detailsicon" />
+
+         <TextView
+             android:id="@+id/tv_cruise_detail"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/Iv"
+             android:layout_marginLeft="10dp"
+             android:layout_alignBottom="@id/Iv"
+             android:fontFamily="@font/jfflatregular"
+             android:text="Details"
+             android:textColor="#000000"
+             android:textSize="20sp" />
+
+         <View
+
+             android:layout_width="250dp"
+             android:layout_height="01dp"
+             android:layout_alignBottom="@+id/tv_cruise_detail"
+             android:layout_alignStart="@+id/view"
+             android:background="#4F4965" />
+
+        <ImageView
+            android:id="@+id/Iv1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_cruise_detail"
+            android:layout_marginLeft="05dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/timeicon" />
+
+         <TextView
+             android:id="@+id/tv_cruise_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/Iv1"
+             android:layout_alignStart="@+id/tv_cruise_detail"
+             android:fontFamily="@font/jfflatregular"
+             android:text="Time"
+             android:textColor="#000000"
+             android:textSize="20sp" />
+
+
+
+         <View
+            android:layout_width="250dp"
+            android:layout_height="01dp"
+            android:layout_below="@+id/tv_cruise_time"
+            android:layout_marginLeft="50dp"
+             android:background="#4F4965"
+             android:id="@+id/view">
+         </View>
+
+        <ImageView
+            android:id="@+id/Iv3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_cruise_time"
+            android:layout_marginLeft="05dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/locationbicon" />
+
+         <TextView
+             android:id="@+id/tv_cruise_location"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/Iv3"
+             android:layout_alignStart="@+id/tv_cruise_detail"
+             android:fontFamily="@font/jfflatregular"
+             android:text="Location"
+             android:textColor="#000000"
+             android:textSize="20sp"
+              />
+
+         <View
+            android:layout_width="250dp"
+            android:layout_height="01dp"
+            android:layout_below="@+id/tv_cruise_location"
+            android:layout_marginLeft="50dp"
+             android:background="#4F4965"/>
+
+        <ImageView
+            android:id="@+id/Iv4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_cruise_location"
+            android:layout_marginLeft="05dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/priceicon" />
+
+         <TextView
+             android:id="@+id/tv_cruise_price"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignStart="@+id/tv_cruise_detail"
+             android:layout_alignBottom="@id/Iv4"
+             android:fontFamily="@font/jfflatregular"
+             android:text="Price"
+             android:textColor="#000000"
+             android:textSize="20sp" />
+         <ImageView
+             android:id="@+id/Iv2"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:layout_below="@+id/tv_cruise_location"
+             android:layout_marginLeft="90dp"
+             android:layout_marginTop="10dp"
+             android:layout_toEndOf="@+id/tv_cruise_time"
+             android:src="@drawable/dateicon" />
+
+         <TextView
+             android:id="@+id/tv_cruise_date"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@id/Iv2"
+
+             android:layout_toEndOf="@+id/Iv2"
+             android:fontFamily="@font/jfflatregular"
+             android:text="Date"
+             android:textColor="#000000"
+             android:textSize="20sp" />
+
+         <View
+             android:id="@+id/View4"
+            android:layout_width="250dp"
+            android:layout_height="01dp"
+            android:layout_below="@+id/tv_cruise_price"
+            android:layout_marginBottom="00dp"
+            android:layout_marginLeft="50dp"
+             android:background="#4F4965"/>
+
+        <ImageView
+            android:id="@+id/Iv5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/View4"
+            android:layout_marginLeft="05dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/howmanyarecoming" />
+
+         <TextView
+             android:id="@+id/tv_cruise_coming"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/Iv5"
+             android:layout_alignParentStart="true"
+             android:layout_marginStart="43dp"
+             android:fontFamily="@font/jfflatregular"
+             android:paddingTop="10dp"
+             android:text="How many are coming"
+             android:textColor="#000000"
+             android:textSize="20sp"/>
+
+         <ImageView
+             android:id="@+id/Iv6"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignTop="@+id/Iv5"
+             android:layout_marginEnd="75dp"
+             android:background="#000000"
+             android:src="@drawable/minusbutton" />
+
+         <TextView
+             android:id="@+id/tv_cruise_count"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_alignTop="@+id/Iv5"
+             android:layout_marginEnd="55dp"
+             android:fontFamily="@font/jfflatregular"
+             android:text="0"
+             android:textColor="#000000"
+             android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/Iv7"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tv_cruise_price"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="#000000"
+            android:src="@drawable/plusbutton"/>
+
+         <View
+            android:layout_width="250dp"
+            android:layout_height="01dp"
+            android:layout_below="@+id/tv_cruise_coming"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="50dp"
+             android:background="#4F4965"/>
+
+         <ImageView
+             android:id="@+id/Iv8"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:layout_below="@+id/tv_cruise_coming"
+             android:layout_marginLeft="05dp"
+             android:layout_marginTop="10dp"
+             android:src="@drawable/note"/>
+
+         <TextView
+             android:id="@+id/tv_cruise_note"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignStart="@+id/tv_cruise_coming"
+             android:layout_alignTop="@+id/Iv8"
+             android:fontFamily="@font/jfflatregular"
+             android:paddingTop="10dp"
+             android:text="Note"
+             android:textColor="#000000"
+             android:textSize="20sp"/>
+
+
+         <View
+             android:layout_width="250dp"
+             android:layout_height="01dp"
+             android:layout_below="@+id/tv_cruise_note"
+             android:layout_marginBottom="30dp"
+             android:layout_marginLeft="50dp"
+             android:background="#4F4965"/>
+
+         <Button
+             android:id="@+id/btn_cruise_book"
+             android:layout_width="250dp"
+             android:layout_height="40dp"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="14dp"
+             android:fontFamily="@font/jfflatregular"
+             android:text="Book Your Advanture!" />
+
+         <TextView
+             android:id="@+id/tv_cruise_timefrom"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/Iv1"
+             android:layout_toEndOf="@+id/tv_cruise_time"
+             android:layout_marginLeft="5dp"
+             android:text="from"
+             android:textSize="15sp"
+             android:textColor="#000000"/>
+
+         <TextView
+             android:id="@+id/Text9"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/Iv1"
+             android:layout_alignEnd="@+id/tv_cruise_coming"
+             android:text="Time"
+             android:textSize="20sp"
+             android:textColor="#000000"/>
+
+         <TextView
+             android:id="@+id/tv_cruise_timeto"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+
+             android:layout_toStartOf="@+id/Iv6"
+             android:layout_alignBottom="@id/Iv1"
+             android:text="to"
+             android:textColor="#000000"
+             android:textSize="15sp" />
+
+
+     </RelativeLayout>
+</LinearLayout>
+

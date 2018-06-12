@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F4965"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/slideIv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/sliderimage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/offerRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</LinearLayout>
+
+    <!--
+        <ImageView
+            android:id="@+id/slideIv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:scaleType="fitXY"
+            android:src="@drawable/sliderimage"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/offerRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:layout_below="@id/Rl3">-->
+
+
+    <!--<ImageView
+        android:id="@+id/Iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/sidebuttoniconb"
+        android:layout_marginTop="05dp"
+        android:layout_marginLeft="05dp"/>
+
+    <ImageView
+        android:id="@+id/Iv1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="05dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/Iv"
+        android:src="@drawable/halforange"/>
+    <TextView
+        android:id="@+id/Vtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/Iv1"
+        android:text="Advantures habgas"
+        android:fontFamily="@font/jfflatregular"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+    <ImageView
+        android:id="@+id/Iv2"
+        android:layout_weight="1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/homeicon"/>
+    <EditText
+        android:id="@+id/Etext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Iv1"
+        android:layout_centerInParent="true"
+        android:text="Search and Filter"
+        android:fontFamily="@font/jfflatregular"
+        android:textSize="20sp"
+        android:padding="5sp"
+        android:gravity="center"
+        android:background="#44FFFFFF"
+        android:layout_marginTop="15dp"
+        />-->
+
+    <!--  <RelativeLayout
+          android:layout_weight="1"
+          android:id="@+id/Rl"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_below="@+id/Rl3"
+          android:layout_marginBottom="09dp"
+          android:background="#44FFFFFF" >
+          <ImageView
+              android:id="@+id/Iv4"
+              android:layout_width="120dp"
+              android:layout_height="match_parent"
+              android:src="@drawable/mountaineeringicon"
+              android:background="#FD8450"/>
+          <TextView
+              android:id="@+id/Vtext1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toEndOf="@id/Iv4"
+              android:text="Mountaineering"
+              android:fontFamily="@font/jfflatregular"
+              android:textSize="18sp"
+              android:textColor="#000000"
+              android:layout_marginLeft="10dp"/>
+
+          <TextView
+              android:id="@+id/Vtext2"
+              android:layout_width="140dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/Vtext1"
+              android:layout_toEndOf="@id/Iv4"
+              android:textSelectHandleLeft="@+id/Iv4"
+              android:layout_marginLeft="10dp"
+              android:textSize="10sp"
+              android:fontFamily="@font/jfflatregular"
+              android:text="@string/offer_mount"/>
+          <TextView
+              android:id="@id/Vtext3"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:layout_toEndOf="@id/Vtext2"
+              android:text="Price"
+              android:fontFamily="@font/jfflatregular"
+              android:textColor="#FFFFFF"
+              android:textSize="15sp"
+              android:layout_marginLeft="20dp"
+              android:layout_alignParentBottom="true"
+              android:paddingTop="00dp"/>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/Rl1"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_below="@+id/Rl"
+          android:layout_marginBottom="09dp"
+          android:background="#44FFFFFF">
+          <ImageView
+              android:id="@+id/Iv5"
+              android:layout_width="120dp"
+              android:layout_height="match_parent"
+              android:src="@drawable/compingicon"
+              android:background="#FD8450"/>
+          <TextView
+              android:id="@+id/Vtext5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toEndOf="@id/Iv5"
+              android:text="Camping"
+              android:fontFamily="@font/jfflatregular"
+              android:layout_marginLeft="10dp"
+              android:textSize="20sp"
+              android:textColor="#000000"/>
+
+          <TextView
+              android:id="@+id/Vtext6"
+              android:layout_width="140dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/Vtext5"
+              android:layout_toEndOf="@id/Iv5"
+              android:layout_marginLeft="10dp"
+              android:textSelectHandleLeft="@+id/Iv4"
+              android:textSize="10sp"
+              android:fontFamily="@font/jfflatregular"
+
+              android:text="@string/offer_mount"/>
+          <TextView
+              android:id="@id/Vtext3"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:layout_toEndOf="@id/Vtext6"
+              android:text="Price"
+              android:fontFamily="@font/jfflatregular"
+              android:textColor="#FFFFFF"
+              android:textSize="15sp"
+              android:layout_marginLeft="20dp"
+              android:layout_alignParentBottom="true"
+              android:paddingTop="00dp"/>
+
+         &lt;!&ndash; <TextView
+              android:id="@id/Vtext3"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentStart="true"
+              android:fontFamily="@font/jfflatregular"
+              android:paddingTop="00dp"
+              android:text="Price"
+              android:textColor="#FFFFFF"
+              android:textSize="15sp" />&ndash;&gt;
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/Rl2"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_below="@+id/Rl1"
+          android:layout_marginBottom="09dp"
+          android:background="#44FFFFFF">
+          <ImageView
+              android:id="@+id/Iv6"
+              android:layout_width="120dp"
+              android:layout_height="match_parent"
+              android:background="#FD8450"
+              android:src="@drawable/cruiseicon"/>
+          <TextView
+              android:id="@+id/Vtext7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toEndOf="@id/Iv6"
+              android:text="Cruise"
+              android:fontFamily="@font/jfflatregular"
+              android:textSize="20sp"
+              android:layout_marginLeft="10dp"
+              android:textColor="#000000"/>
+
+          <TextView
+              android:id="@+id/Vtext8"
+              android:layout_width="140dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/Vtext7"
+              android:layout_toEndOf="@id/Iv6"
+              android:textSelectHandleLeft="@+id/Iv4"
+              android:textSize="13sp"
+              android:fontFamily="@font/jfflatregular"
+              android:layout_marginLeft="10dp"
+              android:text="@string/offer_mount"/>
+
+      </RelativeLayout>
+  -->
+
+
+

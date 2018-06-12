@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50E1C4"
+    tools:context=".ui.activity.ForgotActivity">
+
+    <ImageView
+        android:id="@+id/Iv"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/innerlogo"/>
+
+    <TextView
+        android:id="@+id/restText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Iv"
+        android:layout_centerInParent="true"
+        android:text="forgot Password"
+        android:textSize="30sp"
+        android:fontFamily="@font/jfflatregular"
+        android:textColor="#D33B6F"
+        android:gravity="center"/>
+    <LinearLayout
+        android:id="@+id/Llay1"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:background="#55FFFFFF"
+        android:orientation="horizontal"
+        android:layout_below="@+id/restText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/Iv1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/emailicon"
+            android:background="#55FFFFFF"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/Ltext"
+            android:layout_width="215dp"
+            android:layout_height="55dp"
+            android:hint="Conform Your Email"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:fontFamily="@font/jfflatregular"
+            android:textSize="20sp"
+            android:paddingTop="4dp"
+            android:background="#11FFFFFF"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/Llay1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/resetyourpassword"
+        />
+
+</RelativeLayout>

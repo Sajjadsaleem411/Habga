@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.karigar.hubgaclient.CategoryActivity">
+
+        <!--<ImageView
+            android:id="@+id/Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginLeft="05dp"
+            android:src="@drawable/sidebuttonicon"
+            />
+
+        <EditText
+            android:id="@+id/searchtext"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#33000000"
+            android:fontFamily="@font/jfflatregular"
+            android:gravity="center"
+            android:hint="Search and Filter"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:textSize="20sp" />-->
+        <ImageView
+            android:id="@+id/mainIv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:scaleType="fitXY"
+            android:src="@drawable/sliderimage"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/rl6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/rl1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="05dp"
+        android:layout_marginRight="05dp"
+        android:layout_marginLeft="05dp"
+        android:background="#4F4965"
+       >
+
+        <ImageView
+            android:id="@+id/rl6Iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/splashlogo1"
+            android:layout_marginTop="08dp"
+            android:layout_marginBottom="05dp"/>
+
+        <TextView
+            android:id="@+id/rl6text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl6Iv"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/jfflatregular"
+            android:text="All habgas"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/rl6"
+        android:layout_margin="05dp"
+        android:rowCount="2"
+        android:columnCount="2"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+           android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginRight="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:background="#FD8450">
+          <ImageView
+              android:id="@+id/rl2Iv"
+              android:layout_width="55dp"
+              android:layout_height="55dp"
+              android:layout_centerInParent="true"
+              android:src="@drawable/adventureicon"/>
+
+            <TextView
+                android:id="@+id/rl2Text"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/rl2Iv"
+                android:layout_centerHorizontal="true"
+                android:text="Advantures habgas"
+                android:fontFamily="@font/jfflatregular"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="#00FFFFFF"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:background="#50E1C4">
+            <ImageView
+                android:id="@+id/rl3Iv"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/indoor_icon"/>
+
+            <TextView
+                android:id="@+id/rl3Text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/rl3Iv"
+                android:background="#00FFFFFF"
+                android:fontFamily="@font/jfflatregular"
+                android:gravity="center"
+                android:text="Indoor habgas"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:background="#AFCF27">
+            <ImageView
+                android:id="@+id/rl4Iv"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/outdoor_icon"/>
+
+            <TextView
+                android:id="@+id/rl4Text"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/rl4Iv"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/jfflatregular"
+                android:text="Outdoor habgas"
+                android:textSize="17sp"
+                android:background="#00FFFFFF"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/rl5"
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           android:layout_marginTop="2.5dp"
+           android:layout_marginLeft="2.5dp"
+           android:layout_columnWeight="1"
+           android:layout_rowWeight="1"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentEnd="true"
+           android:background="#D33B6F">
+           <ImageView
+               android:id="@+id/rl5Iv"
+               android:layout_width="55dp"
+               android:layout_height="55dp"
+               android:layout_centerInParent="true"
+               android:src="@drawable/home_icon"/>
+
+           <TextView
+               android:id="@+id/rl5Text"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:layout_below="@+id/rl5Iv"
+               android:layout_centerHorizontal="true"
+               android:textSize="17sp"
+               android:gravity="center"
+               android:fontFamily="@font/jfflatregular"
+               android:text="Home habgas"
+               android:textColor="#FFFFFF"
+               android:background="#00FFFFFF"/>
+       </RelativeLayout>
+
+
+
+    </GridLayout>
+
+</LinearLayout>

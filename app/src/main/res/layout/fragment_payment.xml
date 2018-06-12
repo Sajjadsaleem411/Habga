@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorpayment"
+    tools:context="com.karigar.hubgaclient.PaymentActivity">
+
+  <!--  <ImageView
+        android:id="@+id/Iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/sidebuttonicon"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"/>
+    <ImageView
+        android:id="@+id/Iv6"
+        android:layout_weight="1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/homeicon"/>-->
+    <TextView
+        android:id="@+id/Vtext"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:text="CRUISE !!!"
+        android:textSize="30sp"
+        android:fontFamily="@font/jfflatregular"
+        android:textColor="#D33B6F"/>
+    <ImageView
+        android:id="@+id/Iv1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/Vtext"
+        android:layout_centerInParent="true"
+        android:src="@drawable/cruisecardicon"/>
+    <TextView
+        android:id="@+id/Vtext1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Iv1"
+        android:layout_centerInParent="true"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/jfflatregular"
+        android:text="Your Advanture Is One Click Away!"
+        android:textColor="#4F4965"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/Vtext2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/Vtext1"
+        android:layout_alignEnd="@+id/Vtext1"
+        android:layout_marginEnd="25dp"
+        android:textColor="#4F4965"
+        android:fontFamily="@font/jfflatregular"
+        android:text="Select Your Payment Method"
+        android:textSize="19sp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/Iv2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/Vtext2"
+        android:layout_below="@+id/Vtext2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/visa" />
+
+    <ImageView
+        android:id="@+id/Iv3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/Iv2"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@+id/Iv2"
+        android:src="@drawable/sadad"/>
+
+    <ImageView
+        android:id="@+id/Iv4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/Iv2"
+        android:layout_below="@+id/Iv2"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/mastercard"/>
+
+    <ImageView
+        android:id="@+id/Iv5"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/Iv3"
+        android:layout_alignTop="@+id/Iv4"
+        android:src="@drawable/paypal"/>
+
+    <TextView
+        android:id="@+id/Vtext3"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="05dp"
+        android:text="Continue"
+        android:gravity="center"
+        android:fontFamily="@font/jfflatregular"
+        android:textColor="#4F4965"
+        android:textSize="22sp"/>
+
+</RelativeLayout>
